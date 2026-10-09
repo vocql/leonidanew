@@ -1,0 +1,11 @@
+{
+  "name": "voqcl-tools",
+  "version": "2.0.0",
+  "private": true,
+  "description": "VOQCL TOOLS - static site for GitHub Pages + Supabase backend",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "test": "node tests/qr.test.js && python3 tests/qr_decode.py && node tests/overlay-urls.test.js && node tests/chat-lib.test.js && node tests/render.test.js && node --experimental-strip-types tests/edge-function.test.mjs",
+    "dev": "node --experimental-strip-types tests/mock-stack.mjs"
+  }
+}
